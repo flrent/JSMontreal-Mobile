@@ -1,0 +1,127 @@
+Logfile initialized
+[INFO] logfile = /Data/FLX/Dev/Titanium/JSMontreal/build.log
+[DEBUG] /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py simulator JSMontreal /Data/FLX/Dev/Titanium/android /Data/FLX/Dev/Titanium/JSMontreal fr.florentlamoureux.jsmontreal 9 HVGA 
+[INFO] Building JSMontreal for Android ... one moment
+[INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 25 seconds)
+[DEBUG] waited 25.371370 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
+[DEBUG] fr.florentlamoureux.jsmontreal installed? True
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] copying app icon: /Data/FLX/Dev/Titanium/JSMontreal/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-land-hdpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-long-land-hdpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-long-land-hdpi/background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-long-land-ldpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-long-land-ldpi/background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-long-port-hdpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-long-port-hdpi/background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-long-port-ldpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-long-port-ldpi/background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-notlong-land-hdpi/background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-notlong-land-ldpi/background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-notlong-land-mdpi/background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-notlong-port-hdpi/background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-notlong-port-ldpi/background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-port-mdpi/default.png
+[DEBUG] copying /Data/FLX/Dev/Titanium/JSMontreal/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Data/FLX/Dev/Titanium/JSMontreal/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG] found splash screen at /Data/FLX/Dev/Titanium/JSMontreal/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Data/FLX/Dev/Titanium/JSMontreal/build/android/gen/fr/florentlamoureux/jsmontreal/JsmontrealActivity.java to javac build list
+[DEBUG] adding /Data/FLX/Dev/Titanium/JSMontreal/build/android/gen/fr/florentlamoureux/jsmontreal/JsmontrealAppInfo.java to javac build list
+[DEBUG] adding /Data/FLX/Dev/Titanium/JSMontreal/build/android/gen/fr/florentlamoureux/jsmontreal/JsmontrealApplication.java to javac build list
+[DEBUG] adding /Data/FLX/Dev/Titanium/JSMontreal/build/android/gen/fr/florentlamoureux/jsmontreal/R.java to javac build list
+[DEBUG] Building Java Sources: "/Data/FLX/Dev/Titanium/JSMontreal/build/android/gen/fr/florentlamoureux/jsmontreal/JsmontrealActivity.java" "/Data/FLX/Dev/Titanium/JSMontreal/build/android/gen/fr/florentlamoureux/jsmontreal/JsmontrealAppInfo.java" "/Data/FLX/Dev/Titanium/JSMontreal/build/android/gen/fr/florentlamoureux/jsmontreal/JsmontrealApplication.java" "/Data/FLX/Dev/Titanium/JSMontreal/build/android/gen/fr/florentlamoureux/jsmontreal/R.java"
+[INFO] Waiting for SDCard to become available..
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: /Data/FLX/Dev/Titanium/JSMontreal/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/images/calendar.png
+[DEBUG] from resource zip => assets/Resources/images/locate.png
+[DEBUG] from resource zip => assets/Resources/images/team.png
+[DEBUG] from resource zip => assets/Resources/lib/md5-min.js
+[DEBUG] from resource zip => assets/Resources/ui/common/About.js
+[DEBUG] from resource zip => assets/Resources/ui/common/ApplicationTabGroup.js
+[DEBUG] from resource zip => assets/Resources/ui/common/DAO.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MeetupWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MeetupsList.js
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/Resources/ti.cloud.js
+[DEBUG] from resource zip => assets/app.json
+[DEBUG] from resource zip => assets/index.json
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/drawable/close.png
+[DEBUG] from resource zip => res/drawable/facebook_login.png
+[DEBUG] from resource zip => res/drawable/facebook_login_down.png
+[DEBUG] from resource zip => res/drawable/facebook_login_wide.png
+[DEBUG] from resource zip => res/drawable/facebook_login_wide_down.png
+[DEBUG] from resource zip => res/drawable/facebook_logout.png
+[DEBUG] from resource zip => res/drawable/facebook_logout_down.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-hdpi/close.png
+[DEBUG] from resource zip => res/drawable-ldpi/close.png
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR /Users/florent/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-facebook.jar => ti/modules/titanium/facebook/LICENSE
+[DEBUG] installing native SDK libs
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.022996 seconds on emulator to get ready
+[INFO] Installing application on emulator
+[INFO] Launching application ... JSMontreal
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=fr.florentlamoureux.jsmontreal/.JsmontrealActivity }
+
+[INFO] Deployed JSMontreal ... Application should be running.
+[INFO] Android Emulator has exited
