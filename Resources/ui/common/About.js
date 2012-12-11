@@ -18,7 +18,7 @@ function About(title) {
 	var labelWhere = Ti.UI.createLabel({
 		text:"Where is it ?",
 		font:{
-			fontSize:'30px'
+			fontSize:'30dp'
 		},
 		height:70,
 		left:10,
@@ -57,7 +57,7 @@ function About(title) {
 	var locationHeader = Ti.UI.createLabel({
 		text:"We now meet at the Cakemail offices.",
 		font:{
-			fontSize:'13px'
+			fontSize:'13dp'
 		},
 		top:10,
 		left:10,
@@ -68,7 +68,7 @@ function About(title) {
 	var address = Ti.UI.createLabel({
 		text:"4020 Rue Saint-Ambroise #145 Montreal,QC",
 		font:{
-			fontSize:'13px'
+			fontSize:'13dp'
 		},
 		left:10,
 		top:10,
@@ -87,7 +87,7 @@ function About(title) {
 		scrollView.add(Ti.UI.createLabel({
 			text:"- "+instructions[i].text,
 			font:{
-				fontSize:'13px'
+				fontSize:'13dp'
 			},
 			left:10,
 			color:'#2A2A2A'
@@ -96,22 +96,22 @@ function About(title) {
 	scrollView.add(Ti.UI.createLabel({
 		text:"This app has been created by Florent Lamoureux as a demo for the #26 meetup.",
 		font:{
-			fontSize:'11px'
+			fontSize:'11dp'
 		},
 		left:10,
 		top:30,
-		height:30,
+		height:'auto',
 		color:'#2A2A2A'
 	}));
 	
 	var website = Titanium.UI.createButton({
 		title:'Go to the official website for more informations',
-		font:{fontSize:12,fontFamily:'Helvetica Neue'},
+		font:{fontSize:'12dp',fontFamily:'Helvetica Neue'},
 		height:60,
 		width:'100%',
 	    backgroundColor: "#049CDB",
 	    color: '#ffffff',
-	    top:30,
+	    top:'30dp',
 	    backgroundImage: 'none'
 	});
 	

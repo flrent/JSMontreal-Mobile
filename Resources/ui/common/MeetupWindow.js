@@ -18,7 +18,7 @@ function MeetupWindow(Dao, meetup, title) {
 		text:"Meetup #"+meetup.num+" - "+meetup.on.slice(meetup.on.length-2,meetup.on.length)+"/"+meetup.on.slice(meetup.on.length-4,meetup.on.length-2)+"/"+meetup.on.slice(0,4),
 		top:10,
 		font:{
-			fontSize:'13px',
+			fontSize:'13dp',
 			fontWeight:'bold'
 		},
 		left:10,
@@ -28,7 +28,7 @@ function MeetupWindow(Dao, meetup, title) {
 	var title = Ti.UI.createLabel({
 		text:meetup.title,
 		font:{
-			fontSize:'30px'
+			fontSize:'30dp'
 		},
 		height:'auto',
 		left:10,
@@ -38,7 +38,7 @@ function MeetupWindow(Dao, meetup, title) {
 	var headline = Ti.UI.createLabel({
 		text:meetup.blurb,
 		font:{
-			fontSize:'13px'
+			fontSize:'13dp'
 		},
 		left:10,
 		height:'auto',
@@ -69,7 +69,7 @@ function MeetupWindow(Dao, meetup, title) {
 		var speakerTitle = Ti.UI.createLabel({
 			text:meetup.speakers[i].title,
 			font:{
-				fontSize:'13px'
+				fontSize:'13dp'
 			},
 			height:'auto',
 			left:75,
@@ -82,7 +82,7 @@ function MeetupWindow(Dao, meetup, title) {
 			text:meetup.speakers[i].name,
 			top:0,
 			font:{
-				fontSize:'13px',
+				fontSize:'13dp',
 				fontWeight:'bold'
 			},
 			left:75,
@@ -93,7 +93,7 @@ function MeetupWindow(Dao, meetup, title) {
 		var speakerSynopsys = Ti.UI.createLabel({
 			text:meetup.speakers[i].synopsis,
 			font:{
-				fontSize:'13px'
+				fontSize:'13dp'
 			},
 			top:10,
 			left:75,

@@ -7,6 +7,7 @@ function ApplicationTabGroup(Dao, About, Meetup,MeetupsList, meetups) {
 		win2 = new About("About");
 		win3 = new MeetupsList(Dao,Meetup,meetups);
 	
+
 	var tab1 = Ti.UI.createTab({
 		title: "Next meetup",
 		icon: '/images/team.png',

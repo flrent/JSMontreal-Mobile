@@ -28,7 +28,7 @@ function MeetupsList(Dao,Meetup,meetups) {
 		filterAttribute:'filterCriteria',
 		allowsSelection:true,
 		search:Titanium.UI.createSearchBar({
-			hintText:'Recherchez un meetup',
+			hintText:'Find a meetup',
 		    barColor:'#049CDB', 
 		    showCancel:true,
 		    height:43,
