@@ -6,6 +6,7 @@ function MeetupsList(Dao,Meetup,meetups) {
 		backgroundColor:'#F8F8F8'
 	});
 	var rows = [];
+	
 	for(var i=0;i<meetups.length;i++) {
 		var speaks="";
 		
@@ -30,7 +31,7 @@ function MeetupsList(Dao,Meetup,meetups) {
 		search:Titanium.UI.createSearchBar({
 			hintText:'Find a meetup',
 		    barColor:'#049CDB', 
-		    showCancel:true,
+		    showCancel:false,
 		    height:43,
 		    top:0,
 		}),
@@ -40,7 +41,6 @@ function MeetupsList(Dao,Meetup,meetups) {
 	
 	tableView.addEventListener("click", function(evt) {
 		self.containingTab.open(new Meetup(Dao, evt.row.meetup, evt.row.meetup.title));
-		
 	});
 	return self;
 };

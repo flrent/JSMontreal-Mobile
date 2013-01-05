@@ -5,7 +5,8 @@ function MeetupWindow(Dao, meetup, title) {
 	    barColor:'#049CDB', 
 		backgroundColor:'#F8F8F8'
 	});
-		
+	var home = title ? false : true;
+	
 	var scrollView = Ti.UI.createScrollView({
 	  top:0,
 	  contentHeight: 'auto',
@@ -14,6 +15,47 @@ function MeetupWindow(Dao, meetup, title) {
 	  scrollType:'vertical'
 	});
 	
+	
+	var day = new Date().getDay().toString().length==1 ? "0"+new Date().getDay() : new Date().getDay(),
+		month = new Date().getMonth()+1,
+		year = new Date().getFullYear();
+		month = month.toString().length==1 ? "0"+month : month;
+		
+	var today = year.toString()+month.toString()+day.toString();
+	
+	var present = Titanium.UI.createButton({
+		title:'Come show us something at the next meetup !',
+		font:{fontSize:'12dp',fontFamily:'Helvetica Neue'},
+		height:30,
+		width:'100%',
+	    backgroundColor: "#049CDB",
+	    color: '#ffffff',
+	    backgroundImage: 'none'
+	});
+
+	present.addEventListener("click", function() {
+		var presentWindow = Ti.UI.createWindow({title:'Present',barColor:'#049CDB'});
+		var webview = Ti.UI.createWebView({
+			scalesPageToFit:true,
+			url:'http://js-montreal.org/present'
+		});
+		presentWindow.add(webview);
+		
+		if(Ti.Platform.osname != "android") {
+			var close = Ti.UI.createButton({title:'Close'});
+				close.addEventListener("click", function() {
+					presentWindow.close();
+				});
+			presentWindow.setRightNavButton(close);
+		}
+		presentWindow.open({modal:true});
+	});
+	
+	if(home && today>meetup.on) {
+		self.title = "Last JS Montreal Meetup";
+		scrollView.add(present);
+	}
+		
 	var nb = Ti.UI.createLabel({
 		text:"Meetup #"+meetup.num+" - "+meetup.on.slice(meetup.on.length-2,meetup.on.length)+"/"+meetup.on.slice(meetup.on.length-4,meetup.on.length-2)+"/"+meetup.on.slice(0,4),
 		top:10,
@@ -108,6 +150,12 @@ function MeetupWindow(Dao, meetup, title) {
 		scrollView.add(speakerSynopsys);
 	}
 	
+	if (today<=meetup.on && home && meetup.speakers.length==1) {
+		present.title = "Looks like there's space for one more presentation!";
+		present.top=10;
+		present.height=60;
+		scrollView.add(present);
+	}
 	self.add(scrollView);
 
 	return self;

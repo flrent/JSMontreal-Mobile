@@ -7,9 +7,16 @@ function ApplicationTabGroup(Dao, About, Meetup,MeetupsList, meetups) {
 		win2 = new About("About");
 		win3 = new MeetupsList(Dao,Meetup,meetups);
 	
-
+	var day = new Date().getDay().toString().length==1 ? "0"+new Date().getDay() : new Date().getDay(),
+		month = new Date().getMonth()+1,
+		year = new Date().getFullYear();
+		month = month.toString().length==1 ? "0"+month : month;
+		
+	var today = year.toString()+month.toString()+day.toString();
+	
+	
 	var tab1 = Ti.UI.createTab({
-		title: "Next meetup",
+		title: today>meetups[0].on ? "Last Meetup" : "Next meetup",
 		icon: '/images/team.png',
 		window: win1
 	});
