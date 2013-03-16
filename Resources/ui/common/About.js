@@ -117,6 +117,7 @@ function About(title) {
 	
 	website.addEventListener('click', function(e)
 	{
+		Titanium.Analytics.featureEvent('app.goToWebsite');
 		Titanium.Platform.openURL('http://js-montreal.org');
 	});
 	scrollView.add(website);

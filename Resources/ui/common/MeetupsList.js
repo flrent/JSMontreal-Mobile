@@ -41,6 +41,8 @@ function MeetupsList(Dao,Meetup,meetups) {
 	
 	tableView.addEventListener("click", function(evt) {
 		self.containingTab.open(new Meetup(Dao, evt.row.meetup, evt.row.meetup.title));
+		
+		Titanium.Analytics.featureEvent('app.showMeetup.'+evt.row.meetup.num);
 	});
 	return self;
 };

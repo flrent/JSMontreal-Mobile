@@ -39,8 +39,11 @@ if (Ti.version < 1.8 ) {
 	
 	var md5 = new MD5();
 	var Dao = new DAO(md5);
+	Dao.loginUser();
 	
+	Titanium.Analytics.featureEvent('app.open');
 	Dao.getMeetups(function(meetups) {
+		Titanium.Analytics.featureEvent('app.getMeetups.succeeded');
 		new ApplicationTabGroup(Dao, About, Meetup, MeetupsList, meetups).open();
 	});
 })();
