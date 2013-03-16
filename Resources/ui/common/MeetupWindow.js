@@ -3,6 +3,7 @@ function MeetupWindow(Dao, meetup, title) {
 	var self = Ti.UI.createWindow({
 		title:title || 'Next JS Montreal Meetup',
 	    barColor:'#049CDB', 
+	    backgroundImage:'none',
 		backgroundColor:'#F8F8F8'
 	});
 	var home = title ? false : true;
@@ -10,11 +11,10 @@ function MeetupWindow(Dao, meetup, title) {
 	var scrollView = Ti.UI.createScrollView({
 	  top:0,
 	  contentHeight: 'auto',
-	  contentWidth: Ti.Platform.displayCaps.platformWidth,
+	  contentWidth: 'auto',
 	  layout: 'vertical',
 	  scrollType:'vertical'
 	});
-	
 	
 	var day = new Date().getDay().toString().length==1 ? "0"+new Date().getDay() : new Date().getDay(),
 		month = new Date().getMonth()+1,
@@ -157,6 +157,25 @@ function MeetupWindow(Dao, meetup, title) {
 		scrollView.add(present);
 	}
 	self.add(scrollView);
+
+	
+	self.addEventListener("open", function() {
+	   if (Ti.Platform.osname === "android") {
+	        if (! self.activity) {
+	            Ti.API.error("Can't access action bar on a lightweight window.");
+	        } else {
+	            actionBar = self.activity.actionBar;
+	            if (actionBar) {
+	            	actionBar.backgroundImage='/images/bgTab.png';
+	            	actionBar.displayHomeAsUp = true;
+	                actionBar.onHomeIconItemSelected = function() {
+	                    self.close();
+	                };
+	            }
+	        }
+	    }
+	});
+
 
 	return self;
 	

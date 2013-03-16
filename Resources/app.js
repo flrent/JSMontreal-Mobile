@@ -39,11 +39,32 @@ if (Ti.version < 1.8 ) {
 	
 	var md5 = new MD5();
 	var Dao = new DAO(md5);
-	Dao.loginUser();
 	
 	Titanium.Analytics.featureEvent('app.open');
+	
+
+   if (Ti.Platform.osname === "android") {
+		Titanium.UI.createNotification({
+		    duration: 2000,
+		    message: "Loading meetups..."
+		}).show();
+	}
+	else {
+		Dao.loginUser();
+	}
 	Dao.getMeetups(function(meetups) {
 		Titanium.Analytics.featureEvent('app.getMeetups.succeeded');
-		new ApplicationTabGroup(Dao, About, Meetup, MeetupsList, meetups).open();
+		var tabs = new ApplicationTabGroup(Dao, About, Meetup, MeetupsList, meetups);
+			tabs.open();
+			
+   		if (Ti.Platform.osname === "android") {
+			tabs.addEventListener("open",function() {
+				var activity = tabs.getActivity();
+			    var actionBar = activity.actionBar;
+			    if (actionBar) {
+			        actionBar.title = "JavaScript Montreal";
+			    }
+			 });
+		 }
 	});
 })();

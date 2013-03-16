@@ -18,6 +18,9 @@ function MeetupsList(Dao,Meetup,meetups) {
 			title:meetups[i].num +" - " + meetups[i].title,
 			color:'#2A2A2A',
 			backgroundColor:'#F8F8F8',
+			font:{
+				fontSize:'16dp'
+			},
 			filterCriteria: meetups[i].title+" "+speaks
 		});
 		row.height = 50;
@@ -32,7 +35,7 @@ function MeetupsList(Dao,Meetup,meetups) {
 			hintText:'Find a meetup',
 		    barColor:'#049CDB', 
 		    showCancel:false,
-		    height:43,
+		    height:60,
 		    top:0,
 		}),
 		data:rows

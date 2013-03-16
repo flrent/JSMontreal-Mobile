@@ -15,31 +15,54 @@ function ApplicationTabGroup(Dao, About, Meetup,MeetupsList, meetups) {
 	var today = year.toString()+month.toString()+day.toString();
 	
 	
-	var tab1 = Ti.UI.createTab({
-		title: today>meetups[0].on ? "Last Meetup" : "Next meetup",
-		icon: '/images/team.png',
-		window: win1
-	});
-	win1.containingTab = tab1;
+	if(Ti.Platform.osname!="android") {
+		var tab1 = Ti.UI.createTab({
+			title: today>meetups[0].on ? "Last Meetup" : "Next meetup",
+			icon: '/images/team.png',
+			window: win1
+		});
+		win1.containingTab = tab1;
+		
+		var tab2 = Ti.UI.createTab({
+			title: "About",
+			icon: '/images/locate.png',
+			window: win2
+		});
+		win2.containingTab = tab2;
+		
+		var tab3 = Ti.UI.createTab({
+			title: "Archives",
+			icon: '/images/calendar.png',
+			window: win3
+		});
+		win3.containingTab = tab3;
+		
+	}
+	else {
+		
+		var tab1 = Ti.UI.createTab({
+			title: today>meetups[0].on ? "Last Meetup" : "Next meetup",
+			window: win1
+		});
+		win1.containingTab = tab1;
+		
+		var tab2 = Ti.UI.createTab({
+			title: "About",
+			window: win2
+		});
+		win2.containingTab = tab2;
+		
+		var tab3 = Ti.UI.createTab({
+			title: "Archives",
+			window: win3
+		});
+		win3.containingTab = tab3;
+	}
 	
-	var tab2 = Ti.UI.createTab({
-		title: "About",
-		icon: '/images/locate.png',
-		window: win2
-	});
-	win2.containingTab = tab2;
-	
-	var tab3 = Ti.UI.createTab({
-		title: "Archives",
-		icon: '/images/calendar.png',
-		window: win3
-	});
-	win3.containingTab = tab3;
-	
+
 	self.addTab(tab1);
 	self.addTab(tab2);
 	self.addTab(tab3);
-	
 	return self;
 };
 
